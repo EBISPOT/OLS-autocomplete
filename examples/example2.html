@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title> This is an example of the ontology autocomplete widget</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/0.11.1/typeahead.bundle.min.js"></script>
+<script src="../build/ols-autocomplete.js"></script>
+
+<link rel="stylesheet" href="../css/ols-colors.css" type="text/css" />
+<link rel="stylesheet" href="../css/ols.css" type="text/css" />
+<link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="../css/typeaheadjs.css" type="text/css"/>
+
+</head>
+<body>
+
+<h2>OLS autocomplete widget</h2>
+This example demonstrates how to overwrite the default behavior of actions.
+<div class="grid_10 omega" style="margin-left:30px">
+        <h3>Select Widget</h3>
+                <form id="local-search" name="local-search" action="http://www.ebi.ac.uk/ols/search" method="get">
+                    <fieldset><div class="left">
+                        <label>
+                            <input style="font-weight: normal" size="35" type="text" name="q" data-olswidget="select" data-olsontology="" data-selectpath="http://www.ebi.ac.uk/ols/" olstype="" id="local-searchbox" placeholder="Enter the term you are looking for" class="ac_input">
+                            </input>
+                        </label>
+                    </div>
+                        <div class="right">
+                            <input type="submit" value="Search" class="submit">
+                            </input>
+                        </div>
+                    </fieldset>
+                </form>
+                <br>
+                <i>Note: This first sample demonstrates the 'select' functionality of the widget</i>
+</div>
+
+<div class="grid_10 omega" style="margin-left:30px">
+          <h3>Multisearch Widget</h3>
+                <form id="search2" name="search2" action="javascript:onSubmitClick()" method="get">
+                    <fieldset><div class="left">
+                        <label>
+                            <input style="font-weight: normal" size="35" type="text" name="q" data-olswidget="multisearch" data-olsontology="" data-selectpath="http://www.ebi.ac.uk/ols/" olstype="" id="local-searchbox" placeholder="Enter the term you are looking for" class="ac_input">
+                            </input>
+                        </label>
+                    </div>
+                        <div class="right">
+                            <input type="submit" value="Search" class="submit">
+                            </input>
+                        </div>
+                    </fieldset>
+                </form>
+                <br>
+                <i>Note: This second input box demonstrates the 'multisearch' functionality of the widget</i>
+</div>
+<br>
+<br>
+<div style="margin-left:70px">
+  Want to see this widget in action? Head over to EBI's <a href="http://www.ebi.ac.uk/ols">Ontology Lookup Service</a>
+</div>
+
+
+
+<script>
+function onSubmitClick(){
+alert("We do something else than ask OLS. The action of this submit button is overwritten.")
+}
+
+$(document).ready(function() {
+  var app = require("ols-autocomplete");
+  var instance = new app();
+  options={action : function(relativePath, suggestion_ontology, type, iri){
+    alert("The behavior after clicking on a suggestion has been overwritten! Check the console for more information");
+    console.log("In overwritten function")
+    console.log("Relative Path: "+relativePath)
+    console.log("Suggested Ontology: "+suggestion_ontology)
+    console.log("Type (optional): "+type)
+    console.log("iri (optional): "+iri)
+  }
+}
+  instance.start(options)
+});
+</script>
+
+</body>
+</html>
