@@ -4,9 +4,9 @@ This is a standalone widget for people to include the OLS autocomplete widget an
 
 ##How to install the plugin
 There are multiple ways to install the plugin:
-- Download the javascript file (ols-autocomplete.js) stored in the 'build' folder. Include the file by using normal script tags. See the example html pages for more information
-- The plugin in is available as npm module - search for ols-autocomplete or use this link
-- The widget is listed on the bio.js website where you could find other interesting .js libraries for biological data
+* Download the javascript file (ols-autocomplete.js) stored in the 'build' folder. Include the file by using normal script tags. See the example html pages for more information
+* The plugin in is available as npm module - search for ols-autocomplete or use this link
+* The widget is listed on the bio.js website where you could find other interesting .js libraries for biological data
 
 
 ## How to start the plugin
@@ -15,10 +15,10 @@ To be able to use the widget, you have to include an html <input> field with som
 ```
 <input style="font-weight: normal" size="35" type="text" name="q" data-olswidget="select" data-olsontology="" data-selectpath="http://www.ebi.ac.uk/ols/" olstype="" id="local-searchbox" placeholder="Enter the term you are looking for" class="ac_input"></input>
 ```
-data-olswidget: The potential values are 'select' or 'multiselect', which leads to different handling of the input. Please check the example to see the difference
-data-olsontology: This can be an empty string '' or can narrow the search for suggestions down to a certain ontology.
-data-selectpath: Stores the base url for the interaction with the webservice. In almost all cases, this is going to be http://www.ebi.ac.uk/ols/
-(data-olstype:)
+* data-olswidget: The potential values are 'select' or 'multiselect', which leads to different handling of the input. Please check the example to see the difference
+* data-olsontology: This can be an empty string '' or can narrow the search for suggestions down to a certain ontology.
+* data-selectpath: Stores the base url for the interaction with the webservice. In almost all cases, this is going to be http://www.ebi.ac.uk/ols/
+* (data-olstype:)
 
 ####Javascript
 To start the plugin, the widget has to be required, an instance has to be Initialized and the plugin then started.
