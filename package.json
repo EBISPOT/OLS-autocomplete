@@ -1,7 +1,7 @@
 {
   "name": "ols-autocomplete",
   "description": "This widget is a standalone autocomplete search widget for the Ontology Lookup Service (OLS) provided by the EMBL-EBI.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/LLTommy/ols-autocomplete",
   "author": {
     "name": "lltommy",
