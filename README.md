@@ -45,4 +45,4 @@ The plugin is released under the Apache License Version 2.0. You can find out mo
 # If you are interested in this plugin...
 ...you might also want to have a look at
 - the **ols-treeview** package, see <a href="https://github.com/LLTommy/OLS-treeview">github</a> or <a href="https://www.npmjs.com/package/ols-treeview">npm</a>
-- the **ols-graphview** package as well, see <a href="https://github.com/LLTommy/OLS-graphview">Github</a> or <a href="https://www.npmjs.com/package/ols-treeview">npm</a>
+- the **ols-graphview** package as well, see <a href="https://github.com/LLTommy/OLS-graphview">Github</a> or <a href="https://www.npmjs.com/package/ols-graphview">npm</a>
