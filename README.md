@@ -14,7 +14,7 @@ To be able to use the widget, you have to include an html <input> field with som
 ```
 <input style="font-weight: normal" size="35" type="text" name="q" data-olswidget="select" data-olsontology="" data-selectpath="http://www.ebi.ac.uk/ols/" olstype="" id="local-searchbox" placeholder="Enter the term you are looking for" class="ac_input"></input>
 ```
-* data-olswidget: The potential values are 'select' or 'multiselect', which leads to different handling of the input. Please check the example to see the difference
+* data-olswidget: The potential values are 'select' or 'multisearch', which leads to different handling of the input. Please check the example to see the difference
 * data-olsontology: This can be an empty string '' or can narrow the search for suggestions down to a certain ontology.
 * data-selectpath: Stores the base url for the interaction with the webservice. In almost all cases, this is going to be http://www.ebi.ac.uk/ols/
 * (data-olstype:)
