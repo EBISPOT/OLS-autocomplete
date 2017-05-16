@@ -72,13 +72,16 @@ alert("We do something else than ask OLS. The action of this submit button is ov
 $(document).ready(function() {
   var app = require("ols-autocomplete");
   var instance = new app();
-  options={action : function(relativePath, suggestion_ontology, type, iri){
+  options={action : function(relativePath, suggestion_ontology, type, iri, data){
     alert("The behavior after clicking on a suggestion has been overwritten! Check the console for more information");
     console.log("In overwritten function")
     console.log("Relative Path: "+relativePath)
     console.log("Suggested Ontology: "+suggestion_ontology)
     console.log("Type (optional): "+type)
     console.log("iri (optional): "+iri)
+    console.log("Whole data element (optional+new): ")
+    console.log(data)
+
   }
 }
   instance.start(options)

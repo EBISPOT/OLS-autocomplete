@@ -67,6 +67,7 @@ alert("We do something else than ask OLS. The action of this submit button is ov
 $(document).ready(function() {
   var app = require("ols-autocomplete");
   var instance = new app();
+  //Check example 2 for the newer version of the overwrite function. It has an additional data element - but you can also skip that step
   options={action : function(relativePath, suggestion_ontology, type, iri){
     alert("The behavior after clicking on a suggestion has been overwritten! Check the console for more information");
     console.log("In overwritten function")
