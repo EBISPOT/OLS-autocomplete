@@ -1,7 +1,7 @@
 # Introduction to OLS-autocomplete
 This is a standalone widget for people to include the OLS autocomplete widget and search box within their own homepage. The widget can be seen in action at the start page of the <a href="http://www.ebi.ac.uk/ols">Ontology Lookup Service (OLS)</a>.
 
-##How to install the plugin
+## How to install the plugin
 There are multiple ways to install the plugin:
 * Download the javascript file (ols-autocomplete.js) stored in the 'build' folder. Include the file by using normal script tags. See the example html pages for more information
 * The plugin in is available as npm module - search for ols-autocomplete or use this link
@@ -10,7 +10,7 @@ There are multiple ways to install the plugin:
 
 ## How to start the plugin
 To be able to use the widget, you have to include an html <input> field with some additional information. After the html is set up, the start of the widget in javascript is rather simple. Please check the example in the folder for more information  
-####HTML
+#### HTML
 ```
 <input style="font-weight: normal" size="35" type="text" name="q" data-olswidget="select" data-olsontology="" data-selectpath="http://www.ebi.ac.uk/ols/" olstype="" id="local-searchbox" placeholder="Enter the term you are looking for" class="ac_input"></input>
 ```
@@ -19,7 +19,7 @@ To be able to use the widget, you have to include an html <input> field with som
 * data-selectpath: Stores the base url for the interaction with the webservice. In almost all cases, this is going to be http://www.ebi.ac.uk/ols/
 * (data-olstype:)
 
-####Javascript
+#### Javascript
 To start the plugin, the widget has to be required, an instance has to be Initialized and the plugin then started.
 ```
 <script>
