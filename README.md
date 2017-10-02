@@ -1,5 +1,6 @@
 # Introduction to OLS-autocomplete
 This is a standalone widget for people to include the OLS autocomplete widget and search box within their own homepage. The widget can be seen in action at the start page of the <a href="https://www.ebi.ac.uk/ols">Ontology Lookup Service (OLS)</a>.
+
 **PLEASE MAKE SURE YOU USE HTTPS INSTEAD OF HTTP URLS IN THE FUTURE FOR EBI WEBSERVICE CALLS**
 
 ## How to install the plugin
