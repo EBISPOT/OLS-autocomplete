@@ -1,23 +1,28 @@
 {
   "name": "ols-autocomplete",
   "description": "This widget is a standalone autocomplete search widget for the Ontology Lookup Service (OLS) provided by the EMBL-EBI.",
+<<<<<<< Updated upstream
   "version": "0.0.9",
   "homepage": "https://github.com/LLTommy/ols-autocomplete",
+=======
+  "version": "0.0.5",
+  "homepage": "https://github.com/EBISPOT/ols-autocomplete",
+>>>>>>> Stashed changes
   "author": {
     "name": "lltommy",
     "email": "lltommy@felix-solution.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/LLTommy/ols-autocomplete.git"
+    "url": "git://github.com/EBISPOT/ols-autocomplete.git"
   },
   "bugs": {
-    "url": "https://github.com/LLTommy/ols-autocomplete/issues"
+    "url": "https://github.com/EBISPOT/ols-autocomplete/issues"
   },
   "license": [
     {
       "type": "Apache-2.0",
-      "url": "https://github.com/LLTommy/ols-autocomplete/blob/master/LICENSE"
+      "url": "https://github.com/EBISPOT/ols-autocomplete/blob/master/LICENSE"
     }
   ],
   "main": "lib/index.js",
